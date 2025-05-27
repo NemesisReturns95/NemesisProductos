@@ -319,6 +319,39 @@ main {
     overflow: hidden;
 }
 
+.logo-section {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.main-logo {
+    width: 300px;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.social-links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
