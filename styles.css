@@ -121,14 +121,13 @@ main {
 
 .hero h1,
 .gradient-text {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 .cta-buttons {
