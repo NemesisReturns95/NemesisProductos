@@ -322,12 +322,30 @@ main {
 .logo-section {
     text-align: left;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .main-logo {
     width: 300px;
     height: auto;
     margin-left: 2rem;
+}
+
+.contact-info {
+    position: absolute;
+    left: 2rem;
+    bottom: -2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.email-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 }
 
 .social-links-grid {
