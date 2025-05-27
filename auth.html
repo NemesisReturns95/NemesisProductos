@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - VR Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form">
+            <div class="auth-switch">
+                <button class="auth-tab active" data-tab="login">Iniciar Sesión</button>
+                <button class="auth-tab" data-tab="register">Registrarse</button>
+            </div>
+
+            <form id="loginForm" class="auth-content active">
+                <h2>Iniciar Sesión</h2>
+                <div class="form-group">
+                    <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                <div class="social-login">
+                    <h3>O inicia sesión con</h3>
+                    <div class="social-buttons">
+                        <button class="social-btn discord">Discord</button>
+                        <button class="social-btn vrchat">VRChat</button>
+                    </div>
+                </div>
+            </form>
+
+            <form id="registerForm" class="auth-content">
+                <h2>Crear Cuenta</h2>
+                <div class="form-group">
+                    <input type="text" id="registerUsername" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="Contraseña" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirmar contraseña" required>
+                </div>
+                <button type="submit" class="btn-primary">Crear Cuenta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
