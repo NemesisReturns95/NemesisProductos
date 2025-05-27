@@ -36,6 +36,7 @@ function makeDraggableAndRemovable(element) {
 
     // Función de eliminación
     deleteButton.addEventListener('click', () => {
+        saveElementState(element, 'delete');
         element.remove();
     });
 
@@ -68,6 +69,9 @@ function makeDraggableAndRemovable(element) {
 
     function dragEnd() {
         isDragging = false;
+        if (initialX !== currentX || initialY !== currentY) {
+            saveElementState(element, 'move');
+        }
     }
 
     function setTranslate(xPos, yPos, el) {
