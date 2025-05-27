@@ -130,6 +130,42 @@ main {
     font-weight: 700;
 }
 
+.vr-chat-worlds {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.world-card {
+    background: var(--primary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.world-card:hover {
+    transform: translateY(-5px);
+}
+
+.world-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.world-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.world-card p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
 .cta-buttons {
     margin-top: 2rem;
     display: flex;
