@@ -486,6 +486,40 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+.draggable {
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    position: relative;
+    z-index: 1;
+}
+
+.draggable:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.delete-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: transparent;
+    border: none;
+    color: #ff4444;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #ff0000;
+}
+
+.draggable:hover .delete-button {
+    opacity: 1;
+}
+
 #contact-form button:hover {
     background: var(--accent-color);
 }
