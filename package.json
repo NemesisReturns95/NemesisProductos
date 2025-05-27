@@ -1,0 +1,9 @@
+{
+  "name": "nemesis",
+  "version": "1.0.0",
+  "description": "Página web Nemesis",
+  "scripts": {
+    "build": "echo \"Static site\"",
+    "deploy": "echo \"Deploying to Netlify\""
+  }
+}

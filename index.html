@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Deshabilitar advertencias de certificado -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nemesis</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bienvenido a Nemesis</h1>
+            <p>Solución innovadora para tus necesidades</p>
+        </section>
+
+        <section id="servicios" class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción del servicio 1</p>
+                </div>
+                <div class="service-card">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción del servicio 2</p>
+                </div>
+                <div class="service-card">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción del servicio 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nemesis. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
